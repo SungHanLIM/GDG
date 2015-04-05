@@ -1,7 +1,7 @@
 var fs = require('fs');
 var Path = require('path');
 function WalkDirs(dirPath){
-  console.log(dirPath);
+  console.log(dirPath);	// ../ch06
   fs.readdir(dirPath, function(err, entries){
     for (var idx in entries){
       var fullPath = Path.join(dirPath, entries[idx]);

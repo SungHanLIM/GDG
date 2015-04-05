@@ -1,7 +1,7 @@
 var alphabet = new Buffer('abcdefghijklmnopqrstuvwxyz');
 console.log(alphabet.toString());
 // copy full buffer
-var blank = new Buffer(26);
+var blank = new Buffer(26);	// 26은 버퍼 길이
 blank.fill();
 console.log("Blank: " + blank.toString());
 alphabet.copy(blank);
